@@ -89,7 +89,7 @@ export default function Navbar(props) {
                       />
                     ) : (
                       <span className="block text-center">
-                        Stablo
+                        Become a Commander
                       </span>
                     )}
                   </Link>
