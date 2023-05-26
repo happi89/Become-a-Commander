@@ -6,7 +6,7 @@ import { SunIcon } from "@heroicons/react/24/outline";
 const ThemeSwitch = () => {
   //   const [mounted, setMounted] = useState(false);
   //   const { resolvedTheme, setTheme } = useTheme();
-  const { theme, setTheme } = useTheme();
+  const { theme, setTheme } = useTheme('dark');
   // useEffect only runs on the client, so now we can safely show the UI
   //   useEffect(() => {
   //     setMounted(true);
