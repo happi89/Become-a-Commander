@@ -11,28 +11,27 @@ export async function sharedMetaData(params) {
     title: {
       default:
         settings?.title ||
-        "Stablo - Blog Template for Next.js & Sanity CMS",
-      template: "%s | Stablo"
+        "Become a Commander",
     },
     description:
       settings?.description ||
-      "Stablo - popular open-source next.js and sanity blog template",
+      "Rise up to authority & become a Commander",
     keywords: ["Next.js", "Sanity", "Tailwind CSS"],
-    authors: [{ name: "Surjith" }],
+    authors: [{ name: "Farhaan" }],
     canonical: settings?.url,
     openGraph: {
       images: [
         {
           url:
             urlForImage(settings?.openGraphImage)?.src ||
-            "/img/opengraph.jpg",
+            "/img/gilead-flag-horizonal",
           width: 800,
           height: 600
         }
       ]
     },
     twitter: {
-      title: settings?.title || "Stablo Template",
+      title: settings?.title || "Become a Commander",
       card: "summary_large_image"
     },
     robots: {
