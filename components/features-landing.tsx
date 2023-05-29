@@ -19,8 +19,8 @@ export default function Features() {
   }, []);
 
   return (
-    <section className="relative sm:mb-[650px] md:mb-0 mb-[1000px]">
-      {/* Section background (needs .relative class on parent and next sibling elements) */}
+    <section className="relative sm:mb-[650px] md:mb-12 mb-[1000px]">
+      {/* Section background (needs .relative class on parent and `` sibling elements) */}
       <div
         className="pointer-events-none absolute inset-0 mb-16 bg-gray-100"
         aria-hidden="true"></div>
@@ -160,7 +160,7 @@ export default function Features() {
                   <div className="relative inline-flex flex-col">
                     <Image
                       className="mx-auto rounded md:max-w-none"
-                      src='/../public/img/download.jpeg'
+                      src='/img/download.jpeg'
                       width={500}
                       height="462"
                       alt="Features bg"
@@ -189,15 +189,16 @@ export default function Features() {
                   <div className="relative inline-flex flex-col">
                     <Image
                       className="mx-auto rounded md:max-w-none"
-                      src='/../public/img/download.jpeg'
+                      src='/img/download.jpeg'
                       width={500}
-                      height="44"
+                      height="462"
                       alt="Features bg"
                     />
                     <Image
                       className="absolute left-0 w-full transform animate-float md:max-w-none"
                       src='/img/law-sharp.png'
-                      fill={true}
+                      width={500}
+                      height="44"
                       alt="Element"
                       style={{ top: "30%" }}
                     />
@@ -217,15 +218,15 @@ export default function Features() {
                   <div className="relative inline-flex flex-col">
                     <Image
                       className="mx-auto rounded md:max-w-none"
-                      src='/../public/img/download.jpeg'
+                      src='/img/download.jpeg'
                       width={500}
-                      height="44"
+                      height="462"
                       alt="Features bg"
                     />
                     <Image
                       className="absolute left-0 w-full transform animate-float md:max-w-none"
                       src='/img/putman.png'
-                      width={400}
+                      width={500}
                       height={44}
                       alt="Element"
                       style={{ top: "25%" }}
