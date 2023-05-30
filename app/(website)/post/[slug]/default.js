@@ -42,7 +42,6 @@ export default function Post(props) {
             <div className="flex items-center gap-3">
               <div className="relative h-10 w-10 flex-shrink-0">
                 {AuthorimageProps && (
-                  <Link href={`/author/${post.author.slug.current}`}>
                     <Image
                       src={AuthorimageProps.src}
                       alt={post?.author?.name}
@@ -50,14 +49,11 @@ export default function Post(props) {
                       fill
                       sizes="40px"
                     />
-                  </Link>
                 )}
               </div>
               <div>
                 <p className="text-gray-800 dark:text-gray-400">
-                  <Link href={`/author/${post.author.slug.current}`}>
                     {post.author.name}
-                  </Link>
                 </p>
                 <div className="flex items-center space-x-2 text-sm">
                   <time
@@ -96,7 +92,7 @@ export default function Post(props) {
           </div>
           <div className="mb-7 mt-7 flex justify-center">
             <Link
-              href="/"
+              href="/archive"
               className="bg-brand-secondary/20 rounded-full px-5 py-2 text-sm text-blue-600 dark:text-blue-500 ">
               ← View all posts
             </Link>
